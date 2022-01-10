@@ -1,6 +1,7 @@
 <?php
     require('config/config.php');
     require('config/db.php');
+
     $persons = mysqli_fetch_all($result, MYSQLI_ASSOC);
     $query = 'SELECT * FROM person ORDER BY personid DESC';
     $result = mysqli_query($conn, $query);
